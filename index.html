@@ -378,6 +378,10 @@ https://www.tooplate.com/view/2115-marvel
     <div class="container">
 
       <h1>Big Projects</h1>
+      <audio id="heartbeat" src="images/project/p2.mp3" preload="auto">
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+
       <div class="row">
         <div class="container">
           <div class="row">
@@ -396,8 +400,9 @@ https://www.tooplate.com/view/2115-marvel
             <div class="col">
               <div class="container">
                 <div class="thumbex">
-                  <div class="thumbnail"><a href="Xylophone.html"> <img
-                        src="images/project/BigProject2.png" /><span>Automatic Xylophone</span></a></div>
+                  <div id="play" class="thumbnail"><a href="Xylophone.html"> <img
+                        src="images/project/BigProject2.png" /><img id="topp" src="images/project/BigProject2GIF.gif"
+                        alt=""><span>Automatic Xylophone</span></a></div>
                 </div>
 
               </div>
@@ -436,16 +441,17 @@ https://www.tooplate.com/view/2115-marvel
 
 
                 <h3>job scripts</h3>
-                      <p>Idea: During my Customer Service job I got bored doing a lot of repettive tasks
-                        so I made a script that made my tasks easier
-                      </p>
+                <p>Idea: During my Customer Service job I got bored doing a lot of repettive tasks
+                  so I made a script that made my tasks easier
+                </p>
                 <div class="container">
                   <div class="row  align-items-center">
-                    
+
                     <div class="col-7">
-                      
+
                       <h6>Email script</h6>
-                      <p style="text-align: left;">Python program that generate and send formatted emails I used: <b>DOCX</b> to interrcat with
+                      <p style="text-align: left;">Python program that generate and send formatted emails I used:
+                        <b>DOCX</b> to interrcat with
                         Microsoft Words templates, <b>Win32com.client</b> to generate and send outlook emails, and
                         <b>pathlib</b> to browse Win files
                       </p>
@@ -455,18 +461,22 @@ https://www.tooplate.com/view/2115-marvel
                     <div style="text-align: right;" class="col-4">
                       <img style="border-radius: 30px;;" src="images/project/JobScript.jpg" alt="project image">
                     </div>
-                  
+
                   </div>
                   <div class="row align-items-center">
                     <div class="col-7">
                       <h6>Google sheet script:</h6>
-                      <p style="text-align: left;">We used to log calls on google sheet and to manually input everything so I made some scripts to
+                      <p style="text-align: left;">We used to log calls on google sheet and to manually input everything
+                        so I made some scripts to
                         automate the process of:</p>
-                      <li style="text-align: left;"><b>Date and time:</b> When you start typing a cell will be Automatically populated with date
+                      <li style="text-align: left;"><b>Date and time:</b> When you start typing a cell will be
+                        Automatically populated with date
                         and time. <i><small>Script:IF(B3<>"",IF(A3<>"",A3,NOW()),"")</small></i></li>
-                      <li style="text-align: left;"><b>Duration of the call</b> New cell will be populated with the duration When you finish the
+                      <li style="text-align: left;"><b>Duration of the call</b> New cell will be populated with the
+                        duration When you finish the
                         call (select either Fixed / warranty ...) </li>
-                      <li style="text-align: left;"><b>Tracking info:</b> The delivery status is automatically updated in real time
+                      <li style="text-align: left;"><b>Tracking info:</b> The delivery status is automatically updated
+                        in real time
                         <i><small>Script:I used <a
                               href="https://workspace.google.com/marketplace/app/package_tracker/896633196427?hl=en&pann=sheets_addon_widget">Package
                               Tracker</a> and I customised the outputs to match my needs</small></i>
