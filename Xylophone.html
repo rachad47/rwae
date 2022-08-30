@@ -28,7 +28,7 @@ https://www.tooplate.com/view/2115-marvel
 
 
 <body>
-   
+
 
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
@@ -48,7 +48,7 @@ https://www.tooplate.com/view/2115-marvel
                         <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                        <a href="index.html#BigProjct" class="nav-link"><span data-hover="Projects">Projects</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
@@ -71,7 +71,8 @@ https://www.tooplate.com/view/2115-marvel
     </nav>
     <hr class="rounded">
     <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol">
-        <img src="images/project/LTbrd.png" alt="" class="img-fluid" id="lool">
+        <!-- <img src="images/project/LTbrd.png" style="height:600px ;" alt="" class="img-fluid" id="lool"> -->
+        <img src="images/project/bgpb1.jpg" style="max-height:500px ;" alt="" class="img-fluid" id="lool">
         <!-- <img src="images/project/gif1.gif" alt="" class="img-fluid" id="lool"> -->
     </section>
     <!-- ABOUT -->
@@ -83,12 +84,17 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row align-items-center">
                 <div class="col">
                     <h2>Idea</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam possimus voluptate dolores earum
-                        iste temporibus dolorem iure itaque, illo, voluptates soluta illum eveniet alias, corporis eos
-                        repudiandae minus. Distinctio, dolore?</p>
+                    <li style="text-align: left;">I used to hate electromagnetism so I decided to build a project involving the topic to get
+                        better at</li>
+                    <li style="text-align: left;"> Now I hate them more and I've learned that I shouldn't get near Electrical Engineering.</li>
+                    <br>
+                    <H6>Software for the win!</H6>
                 </div>
                 <div class="col">
-                    <img src="images/project/X95.jpg" alt="Paris" style="height:300px" id="programmingLA">
+                    <!-- <img src="images/project/X95.jpg" alt="Paris" style="height:350px" id="programmingLA"> -->
+                    <video src="images/project/allaTurca.mp4" alt="Paris" style="height:300px" id="programmingLA"
+                        controls>
+                    </video>
                 </div>
             </div>
 
@@ -136,9 +142,9 @@ https://www.tooplate.com/view/2115-marvel
             </div>
             <div class="row">
                 <div class="col">
-                    <p>Afer trying many desings and nail sizes, I was satisfied with sounds made by 3.8cm nail with a
-                        solenoid(2ohm ,
-                        2.8cm , 0.26 wire )</p>
+                    <p>Afer trying many desings and nail sizes, I was satisfied with sounds made by a
+                        2 ohm solenoid
+                        28mm , 26 AWG</p>
                 </div>
             </div>
 
@@ -150,10 +156,10 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="col">
                     <h3>3D-printing</h3>
 
-                    <p>Once decided on the paramters my custom solenoid I was thinking about 3D printing the body of the
+                    <p>Once decided on the paramters of my custom solenoid I was thinking about 3D printing the body of the
                         Solenoid and its support but unfortuanly the printing failed and I just moved to an other
-                        solution but eventually the initial desing was just right and with the help of a fried with
-                        MecEng back he fixed printing setting and it works </p>
+                        solution but eventually the initial desing was just right and with the help of a MechEng. friend <a href="https://www.linkedin.com/in/malak-souissi-msc-9891a6154/">Malak</a>
+                        he fixed some printing settings and it works fine. But was late :/ </p>
                 </div>
 
             </div>
@@ -188,7 +194,7 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="col">
 
                     <img src="images/project/x6.jpg" alt="Paris" style="height:300px" id="programmingLA">
-                    <p>tube + rondelle</p>
+                    <p>Tube + Washers</p>
                 </div>
 
                 <div class="col">
@@ -225,7 +231,7 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="col-7">
                     <li>counting the number of turns is very hard so: 400 turns gave me ~2oHm so I counted number of
                         turns in 5s. and then 400/(X-turns/5s.)=Y-seconds</li>
-                    <li>I also got very lucky and the width of the rondelle matches perfectly the thickness of the
+                    <li>I also got very lucky and the width of the washer matches perfectly the thickness of the
                         wrappped coil required to get 2ohm, so it was a very good visual indication without bothering
                         about timing </li>
                 </div>
@@ -287,7 +293,7 @@ https://www.tooplate.com/view/2115-marvel
                         force with the same
                         electric
                         power but I didn't used it because:</p>
-                    <li style="text-align: left;">rondelle I have are made of metal => (magnet+nail) gonna be stuck
+                    <li style="text-align: left;">The washers I have are made of metal => (magnet+nail) gonna be stuck
                         there</li>
                     <li style="text-align: left;">Hitting the xylephone with a point (nail) is better than a surface
                         (magnet)
@@ -319,17 +325,17 @@ https://www.tooplate.com/view/2115-marvel
 
             <div class="row align-items-center
             ">
-                <div class="col-8">
+                <div class="col-7">
                     <h3>BJTs vs MOSFETs</h3>
                     <br>
-                    <p style="text-align: left;">I went with TIP-120 NPN transistors, many reditors adviced me to go
-                        with MOSFETS isntead to
+                    <p style="text-align: left;">I went with TIP-120 NPN transistors, many reditors advised me to go
+                        with MOSFETS instead to
                         reduce the voltage loss & the heat, but MOSFETS are also 3 times expensive than BJTs + didn't
                         want to wait for shipping</p>
 
                 </div>
-                <div style="text-align: right;" class="col-4">
-                    <img src="images/project/x98.jpg" alt="Paris" style="height:250px" id="programmingLA">
+                <div style="text-align: right;" class="col-5">
+                    <img src="images/project/x98.jpg" alt="Paris" style="height:300px" id="programmingLA">
                 </div>
 
             </div>
@@ -340,7 +346,7 @@ https://www.tooplate.com/view/2115-marvel
                 <div style="text-align: left;" class="col-7">
                     <h3 style="text-align: center;">If it work don't touch it </h3>
 
-                    <p>Comming fro a software background I used to work by "if it works don't touch it" so I decided to
+                    <p>Comming from a software background I used to work by "if it works don't touch it" so I decided to
                         ignore the Back-EMF generated by Soelenoids and to not use Diods to block becauses it worked
                         just fine without it</p>
                     <p> What happened is I was using a relatively small current while first testing but when I got the
@@ -356,11 +362,14 @@ https://www.tooplate.com/view/2115-marvel
             </div>
             <br>
             <h3>Final circuit</h3>
-
+            <p>I run into some difficulties on that part. Luckely I had a roommate <a
+                    href="https://www.linkedin.com/in/david-deng-39170394/">David Deng</a> from McGill with good
+                electronic
+                background he was in Vancouver for his Amazon internship and we worked together on the circuit.</p>
             <div class="row">
                 <div class="col">
                     <img src="images/project/circuit3.jpg" alt="Paris" style="height:650px" id="programmingLA">
-                    <p>That's a simplified illustration of wiring I made with <a
+                    <p>That's a simplified illustration of wiring made with <a
                             href="https://www.tinkercad.com/">TinkerCad</a></p>
                 </div>
             </div>
@@ -368,22 +377,25 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row">
                 <div class="col">
                     <img src="images/project/x1.jpg" alt="Paris" style="height:400px" id="programmingLA">
-                    <p>I connected one end of solenoids to that cable idea: (+)is <b>always connected</b> and (-)will be
+                    <p>We connected <b>one end</b> of solenoids to that cable idea: (+)is <b>always connected</b> and
+                        (-)will be
                         linked once transistors got signal. </p>
                 </div>
                 <div class="col">
                     <img src="images/project/x7.jpg" alt="Paris" style="height:400px" id="programmingLA">
-                    <p>That's a simplified illustration of wiring</p>
+                    <p>
+                        Putting electronic components in the bredbords</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <img src="images/project/x96.jpg" alt="Paris" style="height:400px" id="programmingLA">
-                    <p>That's a simplified illustration of wiring</p>
+                    <p>Connected <b>the other end</b> of each solenoid to the breadboard, for the solenoids on the back
+                        row I put their coils in the front row to ease cabling</p>
                 </div>
                 <div class="col">
                     <img src="images/project/x8.jpg" alt="Paris" style="height:400px" id="programmingLA">
-                    <p>That's a simplified illustration of wiring</p>
+                    <p><a href="https://www.reddit.com/r/cableporn/">r/Cable Porn</a></p>
                 </div>
             </div>
 
@@ -398,7 +410,7 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="col">
                     <video src="images/project/test2.mp4" alt="Paris" style="height:400px" id="programmingLA" controls>
                     </video>
-                    <p>Without the Xylephone</p>
+                    <p>Without the Xylophone</p>
                 </div>
             </div>
 
@@ -521,26 +533,39 @@ https://www.tooplate.com/view/2115-marvel
             br
             <div class="row">
                 <div class="col">
-                    <video src="images/project/p4.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
-                    </video>
+                    <!-- <video src="images/project/p4.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
+                    </video> -->
+                    <iframe width="466" height="270" src="https://www.youtube.com/embed/SIKLUYdW164?controls=1">
+                    </iframe>
+
                     <p>We Wish You a Merry Christmas</p>
                 </div>
                 <div class="col">
-                    <video src="images/project/p3.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
-                    </video>
+                    <!-- <video src="images/project/p3.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
+                    </video> -->
+                    <iframe width="466" height="270" src="https://www.youtube.com/embed/kZ-72ajURT8?controls=1">
+                    </iframe>
+
                     <p>Fur Elise</p>
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="col">
-                    <video src="images/project/p2.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
-                    </video>
-                    <p>Star and stripes for ever</p>
+                    <!-- <video src="images/project/p2.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
+                    </video> -->
+                    <iframe width="466" height="270" src="https://www.youtube.com/embed/Z-5NPbMOIGo?controls=1">
+                    </iframe>
+                    <p>Alla Turca</p>
+
                 </div>
                 <di class="col">
-                    <video src="images/project/p1.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
-                    </video>
-                    <p>Alla Turca</p>
+                    <!-- <video src="images/project/p1.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
+                    </video> -->
+                    <iframe width="466" height="270" src="https://www.youtube.com/embed/urUl9QLz4wA?controls=1">
+                    </iframe>
+                    <p>And my favorite song: The Star and Stripes for Ever</p>
+
             </div>
         </div>
 
@@ -548,6 +573,7 @@ https://www.tooplate.com/view/2115-marvel
         </div>
     </section>
     <hr class="rounded">
+
 
 
     <!-- work experienc ... -->
@@ -567,14 +593,14 @@ https://www.tooplate.com/view/2115-marvel
     <!-- CONTACT -->
 
     <!-- FOOTER -->
-    
+
     <footer class="footer py-5">
         <div class="container">
             <div class="row">
 
                 <div class="col-lg-12 col-12">
-                            <p class="copyright-text text-center">Rachad El Moutaouaffiq</p>
-                            
+                    <p class="copyright-text text-center">Rachad El Moutaouaffiq</p>
+
                 </div>
 
             </div>
