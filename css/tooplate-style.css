@@ -774,8 +774,49 @@ hr.rounded {
   transform: translateY(-50%);
 } */
 
+@media screen and (max-width: 1000px) {
+  .full-screen {
+    /* font-size: 10px; */
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .full-screen {
+ 
+    padding: 2rem 0;
+  }
+  p{
+    font-size: 18px;
+  }
+  #programmingLA1{
+    padding: 0 ;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .full-screen {
+    /* font-size: 10px; */
+    padding: 1.7rem 0;
+  }
+  p{
+    font-size: 17px;
+  }
+  li{
+    font-size: 17px;
+  }
+  #programmingLA1{
+    padding: 0 ;
+  }
+}
+
 align-items-center
 style="text-align: left;"
+col-sm-12 col-md-6 col-lg-
+width: 100%;height: auto;
 
 <img src="images/project/LB25.jpg" alt="Paris" style="height:300px" id="programmingLA">
 <img src="images/project/LB20.jpg" alt="Paris" style="height:300px" id="programmingLA">
+
+
+
