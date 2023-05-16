@@ -589,9 +589,9 @@ strong {
   }
 
   .navbar-collapse {
-    background: #ffffff;
+    background: #0c0c0d;
     text-align: center;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
   }
 
   .navbar-expand-sm .navbar-nav .nav-link {
