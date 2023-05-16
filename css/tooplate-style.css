@@ -660,14 +660,14 @@ hr.rounded {
 }
 
 #lol {
-  background-color: red;
+  background-color: #0c0c0d;
   padding: 0px;
   width: 100%;
 
 }
 
 #lool {
-  background-color: red;
+  background-color: #0c0c0d;
   padding: 0px;
   width: 100%;
 
@@ -696,8 +696,8 @@ hr.rounded {
   overflow: hidden;
   outline: 2px solid white;
   outline-offset: -15px;
-  background-color: rgb(33, 0, 200);
-  box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgb(96, 95, 99);
+  box-shadow: 5px 10px 40px 5px rgba(34, 34, 34, 0.67);
 }
 
 .container .thumbex .thumbnail {
@@ -817,6 +817,5 @@ width: 100%;height: auto;
 
 <img src="images/project/LB25.jpg" alt="Paris" style="height:300px" id="programmingLA">
 <img src="images/project/LB20.jpg" alt="Paris" style="height:300px" id="programmingLA">
-
 
 
