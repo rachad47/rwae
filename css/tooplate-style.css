@@ -659,6 +659,11 @@ hr.rounded {
   border-radius: 2px;
 }
 
+hr.dotted {
+  border-top: 1px dotted #efc008e4;
+  border-radius: 2px;
+}
+
 #lol {
   background-color: #0c0c0d;
   padding: 0px;
@@ -753,6 +758,20 @@ hr.rounded {
   /* transition: all 0.1s ease-out; */
   /* transition: opacity .2s; */
 }
+#code-container {
+  background-color: #1e1e1e; /* Dark background */
+  color: #dcdcdc; /* Light text color for readability */
+  border: 1px solid #ddd; /* Grey border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Padding inside the div */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
+  font-size: 0.85em; /* Smaller font size */
+  overflow-x: auto; /* Horizontal scrolling for wide code */
+  overflow-y: auto; /* Vertical scroll for long code */
+  max-height: 400px; /* Maximum height of the container */
+}
+
+
 
 
 .container .thumbex .thumbnail:hover span {
