@@ -76,7 +76,7 @@ https://www.tooplate.com/view/2115-marvel
     <hr class="rounded">
     <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol">
         <!-- <img src="images/project/LTbrd.png" style="height:600px ;" alt="" class="img-fluid" id="lool"> -->
-        <img src="images/project/BilliardBot/Blogob.jpg" style="max-height:560px ;" alt="" class="img-fluid" id="lool">
+        <img src="images/project/BilliardBot/iblogo3.png" style="max-height:560px ;" alt="" class="img-fluid" id="lool">
         <!-- <img src="images/project/gif1.gif" alt="" class="img-fluid" id="lool"> -->
     </section>
     <!-- ABOUT -->
@@ -85,7 +85,7 @@ https://www.tooplate.com/view/2115-marvel
         <div style="text-align: center;" class="container ">
             <h1>Billiard Bot</h1>
 
-            <div class="row align-items-center">
+            <!-- <div class="row align-items-center">
                 <div class="col-sm-12 col-md-7 col-lg-7">
                     <h3 style="text-align: center;">Idea</h3>
                     <br>
@@ -95,32 +95,32 @@ https://www.tooplate.com/view/2115-marvel
                     </li>
 
                     <br>
-                    <!-- <H6>Software for the win!</H6> -->
                 </div>
                 <div class="col-sm-12 col-md-5 col-lg-5">
                     <img src="images/project/BilliardBot/logo.webp" alt="Paris" style="height:280px" id="programmingLA">
-                    <!-- <video src="images/project/BilliardBot/demo1s.mp4" alt="" style="width: 100%;
-                    height: auto;" id="programmingLA" controls>
-                    </video> -->
+                    
                 </div>
-            </div>
+            </div> -->
 
-            
-            
+
+
 
             <hr class="rounded">
-<br>
+            <br>
 
-            <h2 style="text-align: center;">Concept</h2>
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                
-                    <li style="text-align: left;">The camera is placed on top and we have computer vision with openCV
-                        responsible for ball detections measurements and path decision</li>
-                    <li style="text-align: left;">After Python sends a command to ESP32 through WIFI to move the robot
-                        to specefic coordinates</li>
-                    <li style="text-align: left;">Once arrived to the disgnated position and orientation we charge the
-                        capacitors (200V) and disscharge the solnoid with them resulting in striking the ball</li>
+                    <h2 style="text-align: left;">High level overview</h2>
+                    <br>
+
+                    <li style="text-align: left;">
+
+                        Overhead camera employs OpenCV for tracking the ball and robot, as well as for calculating distances and paths on the pool table.                    </li>
+                    <li style="text-align: left;">Software sends WIFI commands to ESP32, directing robot to set
+                        coordinates.</li>
+                    <li style="text-align: left;">Upon reaching the target position and orientation, the robot charges
+                        and discharges its capacitors through a solenoid, striking the cue ball along the intended path.
+                    </li>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="images/project/BilliardBot/preview.jpg.png" alt="" style="width:80%" id="programingLA">
@@ -134,26 +134,29 @@ https://www.tooplate.com/view/2115-marvel
             </div>
 
             <div class="row align-items-center">
-                
-                
+
+
                 <div class="col-sm-12 col-md-7 col-lg-8">
-                  <h4>Highlights</h4>
-                  <br>
-                    <p>Work is still in progress, I'll keep updating the page as I move forward but here are some highlights</p>
+                    <h4>Highlights</h4>
+                    <br>
+                    <p>Work is still in progress, I'll keep updating the page as I move forward but here are some
+                        highlights</p>
 
                 </div>
 
                 <div class="col-sm-12 col-md-5 col-lg-4">
-                    <img src="images/project/BilliardBot/Work_In_Progress.png" alt="" style="width:100%" id="programmingLA">
+                    <img src="images/project/BilliardBot/Work_In_Progress.png" alt="" style="width:100%"
+                        id="programmingLA">
                 </div>
             </div>
 
-            
+
             <div class="row align-items-center">
-                
-                
+
+
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="images/project/BilliardBot/troubleshooting.jpg" alt="" style="width:100%" id="programmingLA">
+                    <img src="images/project/BilliardBot/troubleshooting.jpg" alt="" style="width:100%"
+                        id="programmingLA">
                     <p>Circuit troublshouting</p>
 
                 </div>
@@ -166,8 +169,8 @@ https://www.tooplate.com/view/2115-marvel
 
 
             <div class="row align-items-center">
-                
-                
+
+
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="images/project/BilliardBot/strike.gif" alt="" style="width:100%" id="programmingLA">
                     <p>Puncher test</p>
@@ -350,15 +353,18 @@ https://www.tooplate.com/view/2115-marvel
 
             <div class="row">
 
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center">
-                    <img src="images/project/BilliardBot/espCir1.jpg" alt="" style="width:100%" id="programmingLA">
-                    <p>NPN transistor + optocouplers</p>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 align-self-center">
+                    <img src="images/project/BilliardBot/cnccircuit.jpg" alt="" style="width:100%" id="programmingLA">
+                    <p>Signals circuit</p>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center">
-                    <video src="images/project/BilliardBot/puncher.mp4" alt="" style="width: 100%;
-                    height: auto;" id="programmingLA" controls>
-                    </video>
-                    <p>Integration test with high voltage circuit</p>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 align-self-center">
+                    <img src="images/project/BilliardBot/HV.jpg" alt="" style="width:100%" id="programmingLA">
+                    <p>High voltage caps + thyristor</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 align-self-center">
+                    <img src="images/project/BilliardBot/strike1.gif" alt="" style="width:100%" id="programmingLA">
+
+                    <p>Integration test</p>
                 </div>
 
             </div>
@@ -672,8 +678,10 @@ https://www.tooplate.com/view/2115-marvel
                     <h5>/control</h5>
                     <p>The goal was being able to control individaully each wheel with a specefic revolution and speed
                         and have them turn at the same time, doing so direclty is challanging because of the way stepper
-                        motor works with loops and <code>delay</code>, thankfully I found a library: <code>AccelStepper</code> that allows that without
-                        manually coding the <code>millis</code> and non-blocking functions</p>
+                        motor works with loops and <code>delay</code>, thankfully I found a library:
+                        <code>AccelStepper</code> that allows that without
+                        manually coding the <code>millis</code> and non-blocking functions
+                    </p>
                 </div>
 
 
@@ -969,7 +977,7 @@ if ball_measurements is not None:
             <br>
 
             <img src="images/project/BilliardBot/Work_In_Progress.png" alt="" style="width: 40%;height: auto;"
-                        id="programmingLA">
+                id="programmingLA">
 
             <br>
             <br>
