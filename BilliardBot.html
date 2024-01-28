@@ -120,8 +120,8 @@ https://www.tooplate.com/view/2115-marvel
                     <li style="text-align: left;">
 
                         <b>
-                            BilliardBot</b> is an autonomous pool-playing robot that uses computer vision for detection
-                        and navigation. when properly positioned, strikes the cue ball with a solenoid.</p>
+                            BilliardBot</b> is a pool-playing robot that uses computer vision for ball detection
+                        and navigation. when properly positioned, it strikes the cue ball with a solenoid powered kicker.</p>
 
                 </div>
 
@@ -138,12 +138,12 @@ https://www.tooplate.com/view/2115-marvel
 
                     <li style="text-align: left;">
 
-                        Overhead camera employs OpenCV for tracking the ball and robot, as well as for calculating
-                        distances and paths on the pool table. </li>
-                    <li style="text-align: left;">Software sends WIFI commands to ESP32, directing robot to set
-                        coordinates.</li>
+                        OpenCV amalyses overhead camera feed for tracking the ball and robot, as well as for calculating
+                        distances and trajectories on the pool table. </li>
+                    <li style="text-align: left;">Software sends commands to ESP32 over Wi-Fi, directing robot to maneuver to set
+                        coordinates via omniwheels.</li>
                     <li style="text-align: left;">Upon reaching the target position and orientation, the robot charges
-                        and discharges its capacitors through a solenoid, striking the cue ball along the intended path.
+                        and discharges its capacitors powering a solenoid to strike the cue ball along the intended path.
                     </li>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
