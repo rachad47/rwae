@@ -108,11 +108,13 @@ strong {
   color: #5b5b5b;
   font-weight: bold;
   border-radius: 50px;
-  padding: 13px 29px;
+  padding: 13px 29px ;
   font-size: 14px;
   line-height: normal;
   overflow: hidden;
   transition: all 0.4s ease;
+  margin: 10px ;
+
 }
 
 .custom-btn:hover {
@@ -122,6 +124,13 @@ strong {
 .custom-btn.custom-btn-bg {
   background: #474559;
   color: #ffffff;
+  margin: 10px ;
+}
+
+.custom-btn.custom-btn-bg2 {
+  background: #19182c;
+  color: #ffffff;
+  margin: 10px ;
 }
 
 .custom-btn.custom-btn-bg:hover {
