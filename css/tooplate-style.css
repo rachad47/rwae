@@ -155,25 +155,24 @@ strong {
 }
 
 .animated-item {
-  font-size: 38px;
+  font-size: 34px;
   line-height: inherit;
   display: block;
   opacity: 0;
   overflow: hidden;
   position: absolute;
+  padding-bottom: 50px;
   top: 0;
   right: 0;
   left: 0;
-  animation: BottomTotop 6s linear infinite 0s;
+  animation: BottomTotop 4s linear infinite 0s;
 }
 
 .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
 }
 
-.animated-item:nth-child(3n+3) {
-  animation-delay: 4s;
-}
+
 
 @keyframes BottomTotop {
   0% {
@@ -615,6 +614,7 @@ strong {
 
   .animated-item {
     font-size: 30px;
+
   }
 
   .custom-btn-group {
@@ -852,5 +852,4 @@ width: 100%;height: auto;
 
 <img src="images/project/LB25.jpg" alt="Paris" style="height:300px" id="programmingLA">
 <img src="images/project/LB20.jpg" alt="Paris" style="height:300px" id="programmingLA">
-
 
