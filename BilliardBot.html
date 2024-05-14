@@ -76,8 +76,8 @@ https://www.tooplate.com/view/2115-marvel
     <hr class="rounded">
     <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol">
         <!-- <img src="images/project/LTbrd.png" style="height:600px ;" alt="" class="img-fluid" id="lool"> -->
-        <img src="images/project/BilliardBot/2banner.jpg" style="max-height:560px ;" alt="" class="img-fluid" id="lool">
-        <!-- <img src="images/project/gif1.gif" alt="" class="img-fluid" id="lool"> -->
+        <!-- <img src="images/project/BilliardBot/2banner.jpg" style="max-height:560px ;" alt="" class="img-fluid" id="lool"> -->
+        <img src="images/project/BilliardBot/picpic.jpg" style="max-height:560px ;" alt="" class="img-fluid" id="lool">
     </section>
     <!-- ABOUT -->
     <section class="contact py-3" id="contact">
@@ -111,11 +111,17 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row align-items-center">
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <!-- <img src="images/project/BilliardBot/logoBB.ico" alt="" style="width:80%" id="programingLA"> -->
-                    <iframe width="95%" height="300px" src="https://www.youtube.com/embed/HVFhAbJPW8Y?autoplay=1" allow="autoplay">
-                    </iframe>
+                    <!-- <iframe width="95%" height="300px" src="https://www.youtube.com/embed/HVFhAbJPW8Y?autoplay=1" allow="autoplay"> -->
+                        <video src="images/project/BilliardBot/finalUpdate.mp4" alt="" style="width: 100%;height: auto;"
+                        id="programmingLA" controls>
+                    </video>
                     
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
+
+                    <img src="images/project/BilliardBot/logoBB.png" alt="" style="width:40%" id="programmingLA">
+                    <br>
+                    <br>
                     <h3 style="text-align: center;">Introduction</h3>
                     <br>
                     <li style="text-align: left;">
@@ -123,7 +129,11 @@ https://www.tooplate.com/view/2115-marvel
                         <b>
                             BilliardBot</b> is a pool-playing robot that uses computer vision for ball detection
                         and navigation. when properly positioned, it strikes the cue ball with a solenoid powered
-                        kicker.</p>
+                        kicker.</p> </li>
+                        
+
+                        <!-- <img src="images/project/BilliardBot/logoBB.png" alt="" style="width:50%; text-align: right;" id="programmingLA"> -->
+
 
                 </div>
 
@@ -187,14 +197,14 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row align-items-center">
 
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="images/project/BilliardBot/cvGif.gif" alt="" style="width:100%" id="programmingLA">
-                    <p>Computer vision without the puncher</p>
+                    <img src="images/project/BilliardBot/downGif.gif" alt="" style="width:100%" id="programmingLA">
+                    <p>side view (speed x2) </p>
 
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="images/project/BilliardBot/strike4.gif" alt="" style="width:100%" id="programmingLA">
-                    <p>Puncher test</p>
+                    <img src="images/project/BilliardBot/topGif.gif" alt="" style="width:100%" id="programmingLA">
+                    <p>top view (speed x2) </p>
                 </div>
             </div>
 
@@ -550,7 +560,7 @@ https://www.tooplate.com/view/2115-marvel
 
             <div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h5 style="text-align: center;">Strategy to hit the ball (still working on it)</h5>
+                    <h5 style="text-align: center;">Strategy to hit the ball</h5>
                     <li><b>Strike position:</b> Provided we know the position of the cue ball, the target ball, and the
                         pocket, currently we
                         are
@@ -558,17 +568,30 @@ https://www.tooplate.com/view/2115-marvel
                         hit the ball with the robot structure instead of the solenoid). Eventually, we have to calculate
                         where the robot should go to strike the ball at the desired angle without colliding anything on
                         its
-                        path.
+                        path. I also made a physics simulation of the pool table to ease the testing process. (more info below)
                     </li>
-                    <li><b>Error mitigation:</b> when dealing with big distances it is better to not send one big
-                        signle command, instead we devide it into smaller steps and recalculate after each step.</li>
+                
+                </div>
+                <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
+                    <img src="images/project/BilliardBot/physIrl.jpg" alt=""
+                        style="max-height:400px ; width: 100%;height: auto;" id="programmingLA">
+                </div>
+            </div>
 
+
+            <div class="row align-items-center">
+                <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
+                    <h5 style="text-align: center;">Error mitigation</h5>
+                    
+                    <li>When dealing with long distances, errors can add up. To fix this, I made a self-adjusting loop that keeps readjusting until the error is negilible.</li>
+                    <li>Note that stepper motors are much more accurate. Here, I intentionally altered the math to test the self-adjusting loop. </li>
 
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                    <img src="images/project/BilliardBot/strikestrat.png" alt=""
-                        style="max-height:400px ; width: 100%;height: auto;" id="programmingLA">
+                    <video src="images/project/BilliardBot/errMit.mp4" alt="" style="width: 100%;
+                    height: auto;" id="programmingLA" controls>
+                    </video>
                 </div>
             </div>
 
@@ -655,19 +678,17 @@ https://www.tooplate.com/view/2115-marvel
                 </div>
             </div>
             <br>
-            <h4 style="text-align: left;">Momentum Calculations</h4>
+            <h4 style="text-align: left;">Pool table physics</h4>
             <div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <p>We calculate the momentum to determine the required angle, position, and solenoid force for
-                        hitting the ball at the desired speed and angle. We also factor in the charging time of the
-                        capacitors. Our approach involves creating a line between the white and target balls,
-                        establishing a perimeter around the white ball (robot radius), using the intersection point as
-                        the target, and then approaching the ball and orienting the robot as necessary.
+                    <p>To ease the testing process in the devolepment phase, I created a physics simulation of the pool table to test my code on it.
+                        So given the position of the cue ball the target ball the pocket and the boundary of the table we can calculate the point and direction of the robot to strike the cue ball have it bounce and hit the target ball and have it go to the pocket.
+                         </p>
                 </div>
 
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-5">
 
-                    <img src="images/project/BilliardBot/momentum.png" alt=""
+                    <img src="images/project/BilliardBot/physSim.gif" alt=""
                         style="max-height:250px ;width: 100% ; height: auto;" id="programmingLA">
 
                 </div>
@@ -990,7 +1011,7 @@ if ball_measurements is not None:
             <br>
             <p>
                 I added the robot's control section to perform basic movement commands and the firing sequence.</p>
-            <img src="images/project/BilliardBot/UI.png" alt="" style=" width: 100%;height: auto;" id="programmingLA">
+            <img src="images/project/BilliardBot/UI2.jpg" alt="" style=" width: 100%;height: auto;" id="programmingLA">
 
             <br>
 
@@ -1004,19 +1025,19 @@ if ball_measurements is not None:
 
                 <p>I will continue to update this section with additional content as it becomes available.</p>
 
-            <div class="row align-items-center">
+                <div class="row align-items-center">
 
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="images/project/BilliardBot/cvGif.gif" alt="" style="width:100%" id="programmingLA">
-                    <p>Computer vision without the puncher</p>
-
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <img src="images/project/BilliardBot/downGif.gif" alt="" style="width:100%" id="programmingLA">
+                        <p>side view (speed x2) </p>
+    
+                    </div>
+    
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <img src="images/project/BilliardBot/topGif.gif" alt="" style="width:100%" id="programmingLA">
+                        <p>top view (speed x2) </p>
+                    </div>
                 </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="images/project/BilliardBot/strike4.gif" alt="" style="width:100%" id="programmingLA">
-                    <p>Puncher test</p>
-                </div>
-            </div>
 
             <br>
             <br>
